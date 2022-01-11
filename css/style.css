@@ -1,0 +1,354 @@
+/* 65 */
+:root{
+    --maxWidth: 65rem;
+}
+*{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    min-height: 100vh;
+}
+.container{
+    max-width: var(--maxWidth);
+    margin: auto;
+}
+/* ============= */
+#fix-header{
+    background-color: rgba(0,0,0,.5);
+    position: fixed;
+    z-index: 100;
+    top:0;
+    left:0;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+#fix-header .container{
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+    justify-content: center
+}
+#fix-header .container img{
+    padding: .8rem 0;
+    width: 4rem;
+}
+#khc2{
+    display: none;
+}
+#fix-header .container ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#fix-header .container ul li{
+    height: 100%;
+}
+#fix-header .container ul li a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fix-header .container ul li a:hover{
+    box-sizing: content-box;
+    border-bottom: 5px solid #0F739D;
+}
+#fix-header .social{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+/* ========= */
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/header/bg.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    color: white;
+}
+/* ============ */
+#pages{
+    padding: 5rem 0 4rem;
+    width: 100%;
+    background-color: #11749E;
+    color: white;
+}
+#pages .container{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.wiw{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+.wiw h2{
+    position: relative;
+    z-index: 2;
+}
+.wiw span{
+    font-size: 10rem;
+    font-weight: bold;
+    position: absolute;
+    color: #3C8DAF;
+}
+#pages .box2{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+#pages .box2 .card{
+    text-align: center;
+}
+#pages .box2 .card img{
+    background-color: #2E85AA;
+    padding: 1.5rem;
+    border-radius: 40%;
+}
+#pages .box2 .card h3{
+    text-transform: uppercase;
+    margin: .4rem 0 1rem;
+}
+#pages .box2 .card p{
+    text-align: justify;
+}
+/* ======== */
+#features{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#features .box1{
+    background-color: #222222;
+    color: white;
+}
+#features .box2{
+    background: url('../img/section/PC.png') center center / cover;
+}
+#features .box3{
+    background: url('../img/section/PC_2.png') center center / cover;
+}
+#features .box4{
+    background-color: rgb(218, 218, 218);
+}
+#features .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30rem;
+}
+#features .box > div{
+    max-width: 50%;
+}
+#features .box span{
+    font-size: .7rem;
+}
+#features .box h2{
+    margin: .3rem 0 2.4rem;
+}
+#features .box p{
+    margin-bottom: 1rem;
+}
+/* ============= */
+#extensions{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+#extensions .wiw span{
+    color: #D7D7D7;
+}
+.wiw ~ p{
+    text-align: center;
+    color: gray;
+    font-size: 2rem;
+}
+/* ========== */
+#tutorials{
+    padding-bottom: 4rem;
+}
+#tutorials .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+#tutorials .container .card img{
+    width: 100%;
+    height: 250px;
+}
+#tutorials .container .card h4{
+    text-align: center;
+    color: #3589AD;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem
+}
+#tutorials .container .card p{
+    text-align: center;
+}
+/* ========== */
+#tutorials{
+    padding: 3rem 0;
+    background-color: #11749E;
+}
+#tutorials .container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+#tutorials .container .card img{
+    width:100%;
+}
+#tutorials .container .card *{
+    color: white;
+    text-align: center;
+}
+#tutorials .container .card h4{
+    margin: .5rem 0 1rem;
+}
+#tutorials .container .card p{
+    margin-left: 1.2rem;
+    text-align: justify;
+}
+/* ============ */
+#phone{
+    padding: 6rem 0;
+    background: url('../img/section_3/bg_dark_2.png') no-repeat center center / cover;
+}
+#phone .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#phone .container .box{
+    color: white;
+}
+#phone .container .box h2{
+    text-transform: uppercase;
+}
+#phone .container .box .head{
+    width: 70%;
+    margin: .5rem 0 2rem;
+}
+#phone .container .box .span{
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: .5rem;
+    width: 50%;
+    padding: .3rem .5rem;
+    background-color: #11749E;
+}
+#phone .container .box2 img{
+    width: 80%;
+}
+/* ========= */
+#contact .wiw span{
+    color: #D7D7D7;
+}
+/* ========= */
+#people{
+    padding: 3rem 0;
+}
+#people .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+#people .container .card{
+    position: relative;
+    min-height: 20rem;
+    width: 100%;
+    text-align: center;
+}
+#people .container .card .text{
+    padding: .5rem 0rem;
+    position: absolute;
+    width: 80%;
+    left:0;
+    right: 0;
+    bottom:-20px;
+    background-color: white;
+    margin:auto;
+}
+#people .container .card .text h2{
+    color: #11749E;
+    text-transform: uppercase;
+}
+#people .container .card1{
+    background: url(../img/section_team/man.png) center center / cover;
+}
+#people .container .card2{
+    background: url(../img/section_team/man_2.png) center center / cover;
+
+}
+#people .container .card3{
+    background: url(../img/section_team/man_3.png) center center / cover;
+
+}
+#people .container .card4{
+    background: url(../img/section_team/woman.png) center center / cover;
+
+}
+/* =============== */
+form{
+    height: 90vh;
+    padding: 6rem 0;
+    background: url('../img/form.png') no-repeat center center / cover;
+}
+form .wiw h2{
+    color: white;
+}
+form .wiw span{
+    color: rgba(255,255,255,.23);
+}
+form .container{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+form input, form textarea{
+    border:1px solid white;
+    color: white;
+    background: none;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+form textarea{
+    resize: none;
+    grid-column: 1 / 4;
+}
+form input[type="submit"]{
+    background-color: #11749E;
+    border: none;
+    grid-column: 2/2;
+}
+/* ===== */
+footer{
+    background-color: rgb(34, 34, 34);
+    color: white;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
